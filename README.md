@@ -1,4 +1,4 @@
-# Stock-Data-Visualization-Using_Bokeh
+# Stock-Data-Visualization-Using-Bokeh
 Creating a stock market visualization for 5 years using bokeh
 
 This project uses the dataset from Kaggle. This dataset contains the stock data for all current S&P 500 companies<br/>
