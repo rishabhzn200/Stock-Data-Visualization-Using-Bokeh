@@ -39,10 +39,10 @@ def update_plot(ticker_list):
         stocks_ticker['date'] = pd.to_datetime(stocks_ticker['date'])
         data_ticker = ColumnDataSource(stocks_ticker)
 
-        plot.line(x='date', y='high', source=data_ticker, legend=ticker , color=color)
+        plot.line(x='date', y='high', source=data_ticker, legend=ticker , color=color, line_width=2)
         # plot.circle(x='date', y='high', size=2, source=data_ticker, fill_color='white')
 
-    layout1 = row([menu_dropdown, plot], sizing_mode='fixed', height=500, width=500,
+    layout1 = row([menu_dropdown, plot], sizing_mode='fixed', height=130, width=500,
                   css_classes=['scrollable'])
 
     curdoc().add_root(layout1)
