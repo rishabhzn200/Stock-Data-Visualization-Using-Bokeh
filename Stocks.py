@@ -156,8 +156,7 @@ if str(__name__).startswith('bk_script_') | (__name__ == '__main__'):
     plot.line(x='date', y='high', source=datawdc, color='green')
     plot.circle(x='date', y='high', size=2, source=datawdc, fill_color='black')
 
-    layout1 = row([menu_dropdown, plot], sizing_mode='fixed', height=130, width=350,
-                        css_classes=['scrollable'])
+    layout1 = row([menu_dropdown, plot], sizing_mode='fixed', height=130, width=350)
 
     # Add the plot to the current doc
     curdoc().add_root(layout1)
